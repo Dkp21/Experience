@@ -53,11 +53,6 @@ void createLinkedList(Node **head, int *arr, int size)
 
         ++i;
     }
-
-    if(curr)
-    {
-        curr->next = NULL;
-    }
 }
 
 void printLinkedList(Node **head)
@@ -75,7 +70,7 @@ void printLinkedList(Node **head)
     printf("]\n");
 }
 
-Node *deleteAllDuplicateElement(Node **head, int del)
+void deleteAllDuplicateElement(Node **head, int del)
 {
     Node *temp = *head;
     Node *prev = NULL;
